@@ -1,0 +1,41 @@
+#search{
+  position: absolute;
+  z-index: 123456789;
+  width: 200px;
+  top: 10px;
+  left: 50px;
+}
+
+#listBtn{
+  position: absolute;
+  z-index: 10;
+  top:10px;
+  left:20px;
+  height: 20px;
+  width: 15px;
+}
+
+#searchbar{
+  display:inline-block;
+  position: relative;
+}
+
+#searchresult{
+  display: none;
+  position: absolute;
+  overflow: scroll;
+  left: -50px;
+  cursor:pointer;
+  max-height: 95vh;
+}
+
+#searchbackground{
+  display: none;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
+  top:-50px;
+  left: -50px;
+  height: 200vh;
+  width: 300px;
+}
