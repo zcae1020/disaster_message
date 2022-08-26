@@ -6,21 +6,34 @@
   <title>disastermap</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/search.css" rel="stylesheet">
+  <link href="css/message.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="searchbackground"></div>
-  <img id="listBtn" src="img/목록.png">
-  <div id="search">
-    <form id="searchbar">
-      <input id="searchtext" type="text" placeholder="장소검색">
-    </form>
-    <ul id="searchresult"></ul>
+  <div id="state">
+    <div id="searchbackground"></div>
+    <img id="listBtn" src="img/목록.png">
+    <div id="message">
+      <h2>재난 문자</h2>
+      <ul>
+        <li>안녕</li>
+      </ul>
+    </div>
+    <div id="search">
+      <form id="searchbar">
+        <input id="searchtext" type="text" placeholder="장소검색">
+      </form>
+      <ul id="searchresult"></ul>
+    </div>
+    <div id="map" style="width: 100vw;height: 100vh;position: absolute;top:0px;overflow: hidden;"></div>
   </div>
-  <div id="map" style="width: 100vw;height: 100vh;position: absolute;top:0px;overflow: hidden;"></div>
+
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=625eb3d4cd28e2a2560c1e86b5fc221c"></script>
+  <script type="text/javascript" src="js/disasterCode.json"></script>
   <script src="js/main.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/message.js"></script>
+  <script type="module" src="js/utils.js"></script>
 </body>
 
 </html>

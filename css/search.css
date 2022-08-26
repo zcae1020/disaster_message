@@ -1,18 +1,9 @@
 #search{
   position: absolute;
-  z-index: 123456789;
+  z-index: 1234;
   width: 200px;
   top: 10px;
   left: 50px;
-}
-
-#listBtn{
-  position: absolute;
-  z-index: 10;
-  top:10px;
-  left:20px;
-  height: 20px;
-  width: 15px;
 }
 
 #searchbar{
@@ -27,6 +18,10 @@
   left: -50px;
   cursor:pointer;
   max-height: 95vh;
+}
+
+#searchresult::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
 
 #searchbackground{
